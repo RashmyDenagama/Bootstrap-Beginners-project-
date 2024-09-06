@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 01</title>
+    <link rel="icon" type="image/x-icon" href="images/jquery-icon-21.jpg">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").hide();
+      });
+    });
+    </script>
+
+<!--<script>	
+  $(document).ready(function() {
+$('button').click(function() {
+window.location.href ="DOM Modification.html"; 
+});
+});
+</script>-->
+
+</head>
+
+<body style="background: #65859E">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)"><img src="1_mZQn6NrFtaeWlqQNVEYZZA.jpg" alt="JQuery" width="80px" height="40px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="DOM Traversal.html">DOM Traversal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="DOM Modification.html">DOM Modification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="DOM Attribute Modification.html">DOM Attribute Modification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="DOM tree Diagram.html">DOM tree Diagram</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <h1 align="center">DOM Traversal</h1><br>
+    <h3>What is DOM Traversal?</h3>  
+	<p>DOM traversal refers to the process of navigating and accessing elements within the Document Object Model (DOM) tree structure.
+        The DOM is a representation of an HTML or XML document, where each element in the document is represented as a node in the tree.
+        DOM traversal is commonly used in web development to manipulate or extract data from a web page. 
+        It allows you to programmatically navigate through the DOM tree and access specific elements or modify their properties and content.</p>
+
+        <h4>Here are some commonly used methods in DOM Traversal</h4>
+        <ul>
+            <li>
+	Parent-Child Traversal: You can traverse the DOM tree by moving between parent and child nodes. For example, you can access the parent node of an element using the parentNode property, or you can access the child nodes using the childNodes or children properties.
+        <br></li>
+<li>
+        Sibling Traversal: Sibling nodes are elements that share the same parent. You can traverse between sibling nodes using properties like nextSibling and previousSibling. These properties allow you to access the next or previous sibling element.
+        <br></li>
+        <br><li>
+        Descendant Traversal: Descendant nodes are elements that are nested within another element. You can traverse through descendant nodes using methods like querySelector and querySelectorAll to select elements based on CSS selectors. These methods allow you to find elements anywhere within the DOM tree.
+        <br><br></li>
+        <li>
+        Traversing by Tag Name or Class: You can select elements by their tag name or class using methods like getElementsByTagName or getElementsByClassName. These methods return a collection of elements that match the specified criteria.
+        <br><br></li>
+        <li>
+        Traversing by CSS Selectors: Many modern JavaScript libraries and frameworks provide powerful methods for traversing the DOM using CSS selectors. For example, jQuery offers functions like find and filter that allow you to select elements using complex CSS selectors.
+   </li> </ul>
+	<button>Click here to hide paragraph</button>
+  <br>
+  <br>
+	</body>
+ <!--<button>Next Page</button>--> 
+</html>
